@@ -1,5 +1,5 @@
 # Include buckets 
-    scoop bucket add extras versions
+    scoop bucket add versions
     scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
 
 # Coding
@@ -9,7 +9,7 @@
     scoop install keepass 7zip treesize-free restic sudo
 
 # Programming Languages
-    scopp install python perl miktex msys2
+    scoop install python perl msys2
 
 # Communication
     scoop install thunderbird whatsapp signal zoom discord
@@ -23,6 +23,11 @@
 # MyBucket
     scoop install roccat-swarm
 
+# Do thinggs
+    scoop uninstall vcredist2022
+    reg import $HOME\scoop\apps\windows-terminal\current\install-context.reg
+    reg import $HOME\scoop\apps\python\current\install-pep-514.reg
+
 # Update Software
     scoop update *
 
@@ -33,5 +38,7 @@
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
 
+# Change steam library folder
+
 # Not Sure
-    # battle.net, kodi, adobe reader, epson, 
+    # battle.net, kodi, adobe reader, epson, hadinet printer, miktex

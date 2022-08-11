@@ -12,7 +12,7 @@
     .\scoop-apps.ps1
 
 # Create Link in Aoo Folder to  Scoop Apps
-    sudo New-Item -ItemType SymvolicLink -Path $HOME\Apps\ -Name Scoop-Apps -Target $HOME\scoop\apps
+    sudo New-Item -ItemType SymbolicLink -Path $HOME\Apps\ -Name Scoop-Apps -Target $HOME\scoop\apps
 
 # Add Github Repositories to User Folder
     Set-Location $HOME\Coding\
