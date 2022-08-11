@@ -1,33 +1,37 @@
-# Include buckets
-scoop bucket add extras nonportable
-scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
+# Include buckets 
+    scoop bucket add extras versions nonportable
+    scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
 
 # Coding
-scoop install vscode windows-terminal sudo
+    scoop install windows-terminal vcredist2022
 
-# helpers
-scoop install git keepass 7zip treesize-free nvidia-display-driver-np restic
+# Helpers
+    scoop install keepass 7zip treesize-free restic sudo
+    sudo scoop install nvidia-display-driver-with-3d-vision-np
 
-# Languages
-scopp install python miktex msys2
+# Programming Languages
+    scopp install python perl miktex msys2
 
 # Communication
-scoop install thunderbird whatsapp signal microsoft-teams zoom discord
+    scoop install thunderbird whatsapp signal microsoft-teams zoom discord
 
 # Office
-scoop install googlechrome office-365-apps-minimal-np nextcloud spotify aimp
+    scoop install googlechrome nextcloud spotify aimp
 
 # Games
-scoop install playnite steam ubisoftconnect
+    scoop install steam ubisoftconnect playnite
 
 # MyBucket
-scoop install roccat-swarm
+    scoop install roccat-swarm
 
-# Manual
-Start-Process https://e3.boxcdn.net/box-installers/desktop/releases/win/Box-x64.msi
-Start-Process https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
-Start-Process https://tools.pdf24.org/de/creator
+# Update Software
+    scoop update *
 
-# Missing
-# onenote, adobe reader, epson, 
-# battle.net?, kodi?
+# Manual Downloads
+    Start-Process https://e3.boxcdn.net/box-installers/desktop/releases/win/Box-x64.msi
+    Start-Process https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
+    Start-Process https://tools.pdf24.org/de/creator
+    Start-Process https://www.office.com/?auth=2
+
+# Not Sure
+    # battle.net, kodi, adobe reader, epson, 
