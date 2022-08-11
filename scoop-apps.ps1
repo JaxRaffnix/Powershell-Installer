@@ -17,7 +17,7 @@
     sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
 # Programming Languages
-    scoop install python perl msys2
+    scoop install python perl msys2 miktex
 
     reg import $HOME\scoop\apps\python\current\install-pep-514.reg
 
@@ -30,7 +30,7 @@
 # Games
     scoop install steam ubisoftconnect playnite
 
-    Write-Output "!Change Steam Download Folder!"
+    # Write-Output "!Change Steam Download Folder!"
 
 # MyBucket
     scoop install roccat-swarm
@@ -47,4 +47,4 @@
     Start-Process https://www.msys2.org/
 
 # Not Sure
-    # battle.net, kodi, adobe reader, epson, hadinet printer, miktex
+    # battle.net, kodi, adobe reader, epson, hadinet printer,
