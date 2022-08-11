@@ -44,6 +44,7 @@
     Start-Process https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
+    Start-Process https://www.msys2.org/
 
 # Not Sure
     # battle.net, kodi, adobe reader, epson, hadinet printer, miktex
