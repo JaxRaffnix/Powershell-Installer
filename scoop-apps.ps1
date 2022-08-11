@@ -1,15 +1,23 @@
 # Include buckets 
-    scoop bucket add versions
+    scoop bucket add versions extras
     scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
 
 # Coding
-    scoop install windows-terminal vcredist2022
+    scoop install vscode windows-terminal vcredist2022
+
+    scoop uninstall vcredist2022
+
+    reg import $HOME\scoop\apps\vscode\current\install-context.reg
+    reg import $HOME\scoop\apps\vscode\current\install-association.reg
+    reg import $HOME\scoop\apps\windows-terminal\current\install-context.reg
 
 # Helpers
     scoop install keepass 7zip treesize-free restic sudo
 
 # Programming Languages
     scoop install python perl msys2
+
+    reg import $HOME\scoop\apps\python\current\install-pep-514.reg
 
 # Communication
     scoop install thunderbird whatsapp signal zoom discord
@@ -20,13 +28,10 @@
 # Games
     scoop install steam ubisoftconnect playnite
 
+    Write-Output "!Change Steam Download Folder!"
+
 # MyBucket
     scoop install roccat-swarm
-
-# Do thinggs
-    scoop uninstall vcredist2022
-    reg import $HOME\scoop\apps\windows-terminal\current\install-context.reg
-    reg import $HOME\scoop\apps\python\current\install-pep-514.reg
 
 # Update Software
     scoop update *
@@ -37,8 +42,6 @@
     Start-Process https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
-
-# Change steam library folder
 
 # Not Sure
     # battle.net, kodi, adobe reader, epson, hadinet printer, miktex

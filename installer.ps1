@@ -1,18 +1,15 @@
-# Create User Folders
-    .\folders.ps1   
-
 # Install Scoop
-    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    Set-ExecutionPolicy Unrestricted -Scope CurrentUser
     Invoke-RestMethod get.scoop.sh | Invoke-Expression
 
-# Create Git on the Machine
+# Setup Git on the Machine
     .\gitcreate.ps1
 
 # Install Software via Scoop
     .\scoop-apps.ps1
 
-# Create Link in Aoo Folder to  Scoop Apps
-    sudo New-Item -ItemType SymbolicLink -Path $HOME\Apps\ -Name Scoop-Apps -Target $HOME\scoop\apps
+# Create User Folders
+    .\folders.ps1  
 
 # Add Github Repositories to User Folder
     Set-Location $HOME\Coding\
@@ -25,6 +22,3 @@
     .\apply_settings.ps1
 
 Set-Location $HOME
-
-# configure software
-code

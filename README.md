@@ -1,7 +1,7 @@
 # Powershell-install-guide
 
 beim ausführen auf hinreichende rechte achten
-set executionPolicy unrestricted 
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 scoop nicht mit admin rechten ausführen
 

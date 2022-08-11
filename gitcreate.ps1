@@ -1,10 +1,5 @@
 # Install Git and Visual Studio Code
     scoop install git
-    scoop bucket add extras
-    scoop install vscode
-
-    reg import $HOME\scoop\apps\vscode\current\install-context.reg
-    reg import $HOME\scoop\apps\vscode\current\install-association.reg
 
 # Configure Git
     git config --gloabl credential.helper manager-core
