@@ -12,7 +12,9 @@
     reg import $HOME\scoop\apps\windows-terminal\current\install-context.reg
 
 # Helpers
-    scoop install keepass 7zip treesize-free restic sudo
+    scoop install keepass 7zip treesize-free restic sudo innounp
+
+    sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
 # Programming Languages
     scoop install python perl msys2
