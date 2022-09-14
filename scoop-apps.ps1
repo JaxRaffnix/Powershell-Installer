@@ -25,7 +25,7 @@
     scoop install thunderbird whatsapp signal zoom discord
 
 # Office
-    scoop install googlechrome nextcloud spotify aimp
+    scoop install googlechrome nextcloud spotify inkscape
 
 # Games
     scoop install steam ubisoftconnect playnite
@@ -36,6 +36,7 @@
     scoop install roccat-swarm
 
 # Update Software
+    scoop update
     scoop update *
 
 # Manual Downloads
@@ -47,4 +48,4 @@
     Start-Process https://www.msys2.org/
 
 # Not Sure
-    # battle.net, kodi, adobe reader, epson, hadinet printer,
+    # battle.net, kodi, adobe reader, epson, hadinet printer, aimp 
