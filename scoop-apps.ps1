@@ -25,7 +25,7 @@
     scoop install thunderbird whatsapp signal zoom discord
 
 # Office
-    scoop install googlechrome nextcloud spotify aimp
+    scoop install googlechrome nextcloud spotify inkscape
 
 # Games
     scoop install steam ubisoftconnect playnite
@@ -33,10 +33,15 @@
     # Write-Output "!Change Steam Download Folder!"
 
 # MyBucket
-    scoop install roccat-swarm
+    # scoop install 
 
 # Update Software
+    scoop update
     scoop update *
+    scoop cache rm *
+    scoop cleanup *
+    
+    scoop checkup
 
 # Manual Downloads
     Start-Process https://www.nvidia.de/Download/index.aspx?lang=de
@@ -45,6 +50,10 @@
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
     Start-Process https://www.msys2.org/
+    Start-Process https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
 
 # Not Sure
-    # battle.net, kodi, adobe reader, epson, hadinet printer,
+    # battle.net, kodi, adobe reader, epson, hadinet printer, aimp, roccat-swarm
+
+# bugged
+    # thunderbird
