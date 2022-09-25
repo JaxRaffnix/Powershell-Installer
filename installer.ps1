@@ -18,7 +18,7 @@
     git clone https://github.com/JaxRaffnix/Powershell-Backups.git
     git clone https://github.com/JaxRaffnix/Powershell-Terminal-Settings.git
 
-    Set-Location .\Powershell-Terminal-Settings\
+    Set-Location $HOME\Coding\Powershell-Terminal-Settings\
     .\apply_settings.ps1
 
 Set-Location $HOME
