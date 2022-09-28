@@ -21,6 +21,8 @@
 
     reg import $HOME\scoop\apps\python\current\install-pep-514.reg
 
+    Write-Output "run msys2, then 'pacman -S mingw-w64-x86_64-gcc'"
+
 # Communication
     scoop install thunderbird whatsapp signal zoom discord
 
