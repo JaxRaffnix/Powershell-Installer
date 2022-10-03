@@ -22,7 +22,9 @@
     reg import $HOME\scoop\apps\python\current\install-pep-514.reg
 
 # Communication
-    scoop install thunderbird whatsapp signal zoom discord
+    scoop install thunderbird whatsapp signal zoom discord thunderbird
+
+    Write-Output "Start Thunderbird Profile Manager"
 
 # Office
     scoop install googlechrome nextcloud spotify inkscape
@@ -54,6 +56,3 @@
 
 # Not Sure
     # battle.net, kodi, adobe reader, epson, hadinet printer, aimp, roccat-swarm
-
-# bugged
-    # thunderbird
