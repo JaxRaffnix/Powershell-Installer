@@ -1,6 +1,7 @@
 # Include buckets 
     scoop bucket add versions extras
     scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
+    scoop bucket add games
 
 # Coding
     scoop install vscode windows-terminal vcredist2022
@@ -32,7 +33,9 @@
     scoop install googlechrome nextcloud spotify inkscape
 
 # Games
-    scoop install steam ubisoftconnect playnite
+    scoop install steam ubisoftconnect playnite 
+
+    scoop install epic-games-launcher
 
     # Write-Output "!Change Steam Download Folder!"
 
