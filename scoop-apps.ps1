@@ -18,11 +18,9 @@
     sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
 # Programming Languages
-    scoop install python perl msys2 miktex
+    scoop install python perl gcc miktex
 
     reg import $HOME\scoop\apps\python\current\install-pep-514.reg
-
-    Write-Output "run msys2, then 'pacman -S mingw-w64-x86_64-gcc'"
 
 # Communication
     scoop install thunderbird whatsapp signal zoom discord thunderbird
@@ -34,7 +32,6 @@
 
 # Games
     scoop install steam ubisoftconnect playnite 
-
     scoop install epic-games-launcher
 
     # Write-Output "!Change Steam Download Folder!"
@@ -53,11 +50,9 @@
 # Manual Downloads
     Start-Process https://www.nvidia.de/Download/index.aspx?lang=de
     Start-Process https://e3.boxcdn.net/box-installers/desktop/releases/win/Box-x64.msi
-    Start-Process https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
-    Start-Process https://www.msys2.org/
     Start-Process https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
 
 # Not Sure
-    # battle.net, kodi, adobe reader, epson, hadinet printer, aimp, roccat-swarm
+    # battle.net, kodi, adobe reader, epson, hadinet printer, aimp
