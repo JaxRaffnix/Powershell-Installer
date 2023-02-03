@@ -28,7 +28,7 @@
     Write-Output "Start Thunderbird Profile Manager"
 
 # Office
-    scoop install googlechrome nextcloud spotify inkscape
+    scoop install googlechrome nextcloud inkscape
 
 # Games
     scoop install steam ubisoftconnect playnite 
@@ -53,6 +53,10 @@
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
     Start-Process https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
+    Start-Process https://www.spotify.com/de/download/other/
+
+# Knows Bugs
+    # spotify, if OS is not in english
 
 # Not Sure
     # battle.net, kodi, adobe reader, epson, hadinet printer, aimp
