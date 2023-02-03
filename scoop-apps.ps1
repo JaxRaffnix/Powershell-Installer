@@ -23,7 +23,7 @@
     reg import $HOME\scoop\apps\python\current\install-pep-514.reg
 
 # Communication
-    scoop install thunderbird whatsapp signal zoom discord thunderbird
+    scoop install thunderbird whatsapp signal zoom discord
 
     Write-Output "Start Thunderbird Profile Manager"
 
@@ -31,8 +31,7 @@
     scoop install googlechrome nextcloud inkscape
 
 # Games
-    scoop install steam ubisoftconnect playnite 
-    scoop install epic-games-launcher
+    scoop install steam ubisoftconnect epic-games-launcher playnite 
 
     # Write-Output "!Change Steam Download Folder!"
 
