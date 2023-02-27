@@ -1,27 +1,25 @@
 # Include buckets 
-    scoop bucket add versions extras
+    scoop bucket add extras
     scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
 
 # Coding
-    scoop install vscode windows-terminal vcredist2022
-
-    scoop uninstall vcredist2022
+    scoop install vscode windows-terminal
 
     reg import $HOME\scoop\apps\vscode\current\install-context.reg
     reg import $HOME\scoop\apps\vscode\current\install-association.reg
     reg import $HOME\scoop\apps\windows-terminal\current\install-context.reg
 
 # Helpers
-    scoop install keepass 7zip treesize-free restic sudo innounp
+    scoop install keepass 7zip treesize-free restic sudo innounp dark
 
-    sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+    # sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
 # Programming Languages
-    scoop install python perl msys2 miktex
+    scoop install python perl miktex gcc
 
     reg import $HOME\scoop\apps\python\current\install-pep-514.reg
 
-    Write-Output "run msys2, then 'pacman -S mingw-w64-x86_64-gcc'"
+    # Write-Output "run msys2, then 'pacman -S mingw-w64-x86_64-gcc'"
 
 # Communication
     scoop install thunderbird whatsapp signal zoom discord
@@ -51,11 +49,9 @@
     Start-Process https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
-    Start-Process https://www.msys2.org/
     Start-Process https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
 
 # Not Sure
     # battle.net, kodi, adobe reader, epson, hadinet printer, aimp, roccat-swarm
-
-# bugged
-    # thunderbird
+    # vcredist2022
+    # scoop uninstall vcredist2022
