@@ -1,4 +1,4 @@
-# Install Git and Visual Studio Code
+# Install Git
     scoop install git
 
 # Configure Git

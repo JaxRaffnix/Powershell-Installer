@@ -1,6 +1,7 @@
 # Include buckets 
     scoop bucket add extras
     scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
+    scoop bucket add games
 
 # Coding
     scoop install vscode windows-terminal
@@ -24,11 +25,13 @@
 # Communication
     scoop install thunderbird whatsapp signal zoom discord
 
+    Write-Output "Start Thunderbird Profile Manager"
+
 # Office
-    scoop install googlechrome nextcloud spotify inkscape
+    scoop install googlechrome nextcloud inkscape
 
 # Games
-    scoop install steam ubisoftconnect playnite
+    scoop install steam ubisoftconnect epic-games-launcher playnite 
 
     # Write-Output "!Change Steam Download Folder!"
 
@@ -46,12 +49,13 @@
 # Manual Downloads
     Start-Process https://www.nvidia.de/Download/index.aspx?lang=de
     Start-Process https://e3.boxcdn.net/box-installers/desktop/releases/win/Box-x64.msi
-    Start-Process https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
     Start-Process https://tools.pdf24.org/de/creator
     Start-Process https://www.office.com/?auth=2
     Start-Process https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
+    Start-Process https://www.spotify.com/de/download/other/
+
+# Knows Bugs
+    # spotify, if OS is not in english
 
 # Not Sure
-    # battle.net, kodi, adobe reader, epson, hadinet printer, aimp, roccat-swarm
-    # vcredist2022
-    # scoop uninstall vcredist2022
+    # battle.net, kodi, adobe reader, epson, hadinet printer, aimp

@@ -11,3 +11,7 @@
     sudo New-item -ItemType SymbolicLink -Path $HOME\Desktop\ -Name Apps -Target $HOME\Apps
     sudo New-item -ItemType SymbolicLink -Path $HOME\Desktop\ -Name Coding -Target $HOME\Coding
     sudo New-item -ItemType SymbolicLink -Path $HOME\Desktop\ -Name Workspace -Target $HOME\Workspace
+    sudo New-item -ItemType SymbolicLink -Path $HOME\Desktop\ -Name Downloads -Target $HOME\Downloads
+    sudo New-item -ItemType SymbolicLink -Path $HOME\Desktop\ -Name Box -Target $HOME\Box
+    sudo New-item -ItemType SymbolicLink -Path $HOME\Desktop\ -Name Nextcloud -Target $HOME\Nextcloud
+    sudo New-item -ItemType SymbolicLink -Path $HOME\Desktop\ -Name OneDrive -Target $HOME\OneDrive
