@@ -53,6 +53,7 @@
     Start-Process https://www.office.com/?auth=2
     Start-Process https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.exe
     Start-Process https://www.spotify.com/de/download/other/
+    start-process https://visualstudio.microsoft.com/de/visual-cpp-build-tools/
 
 # Knows Bugs
     # spotify, if OS is not in english
