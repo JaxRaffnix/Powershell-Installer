@@ -1,7 +1,7 @@
 # Include buckets 
     scoop bucket add extras
     # scoop bucket add mybucket https://github.com/JaxRaffnix/Powershell-scoop-bucket.git
-    scoop bucket add games
+    # scoop bucket add games
 
 # Coding
     scoop install vscode windows-terminal
@@ -11,7 +11,7 @@
     reg import $HOME\scoop\apps\windows-terminal\current\install-context.reg
 
 # Helpers
-    scoop install keepass 7zip restic sudo innounp dark
+    scoop install keepass 7zip restic sudo innounp dark extras/keepass-plugin-keepassnatmsg
 
     sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 
@@ -26,13 +26,10 @@
     Write-Output "Start Thunderbird Profile Manager"
 
 # Office
-    scoop install googlechrome nextcloud inkscape
+    scoop install googlechrome nextcloud inkscape spotify
 
 # Games
-    scoop install steam ubisoftconnect epic-games-launcher playnite 
-
-# MyBucket
-    # scoop install 
+    # scoop install steam ubisoftconnect epic-games-launcher playnite 
 
 # Update Software
     scoop update
